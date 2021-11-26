@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>{{title}}</title>
+        <script type="module">import * as library from './static/__target__/library.js'; window.library = library;</script>
+    </head>
+    <body>
+        <h1>Welcome to {{title}}</h1>
+        <p>
+        	Input the following parameters to receive a prediction.
+        </p>
+        <!-- <ul>
+            <li><a href="ex1">Exercise 1</a></li>
+            <li><a href="ex2">Exercise 2</a></li>
+        </ul> -->
+
+        <!-- </p>
+        <input type="text" name="numbers">
+        <p> -->
+        
+        
+        <label for="fname">New cases:</label>
+        <input type="text" id="new_cases" name="new_cases"><br><br>
+        <label for="lname">New deaths:</label>
+        <input type="text" id="new_deaths" name="new_deaths"><br><br>
+        <label for="lname">People fully vaccinated:</label>
+        <input type="text" id="people_fully_vaccinated" name="people_fully_vaccinated"><br><br>
+            
+
+        <p>
+            <label for="lname">Predicted ICU patients:</label>
+            <div id="predicted">...</div>
+            <button onclick="library.predict()">Predict</button>
+        </p>
+
+    </body>
+</html>
